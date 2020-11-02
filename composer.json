@@ -1,0 +1,25 @@
+{
+    "name": "etutorials/web",
+    "description": "e-Tutorials Website",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Om Prakash Tiwari",
+            "email": "optiwari.india@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "etutorials\\":"src/"
+        }
+    },
+
+    "require": {
+        "optiwariindia/database": "^1.1",
+        "twig/twig": "^3.1",
+        "phpmailer/phpmailer": "^6.1",
+        "psr/log": "^1.1",
+        "league/oauth2-google": "^3.0",
+        "hayageek/oauth2-yahoo": "^2.0"
+    }
+}

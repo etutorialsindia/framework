@@ -1,0 +1,33 @@
+<footer class="footer-area">
+
+	<div
+		class="bottom-footer-area d-flex justify-content-between align-items-center">
+
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<a href="/">
+				<img style='max-height:32px;filter:invert(1)' src="/logo/logo_256.png" alt="">
+			</a>
+			<a href="{{project.contact.phone.link}}">
+				<span class='fa fa-phone'></span>
+				{{project.contact.phone.text}}</a>
+			<a href="{{project.contact.email.link}}">
+				<span class="fa fa-envelope-o"></span>
+				{{project.contact.email.text}}
+			</a>
+			<a href="{{project.contact.whatsapp.link}}">
+				<span class="fa fa-whatsapp"></span>
+				{{project.contact.whatsapp.text}}
+			</a>
+		</div>
+		<!-- Follow Us -->
+		<div class="follow-us">
+			<span>Follow us</span>
+			{% for social in project.socials %}
+				<a href="{{social.link}}">
+					<i class="fa fa-{{social.icon}}" aria-hidden="true"></i>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+</footer>
