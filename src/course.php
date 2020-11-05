@@ -5,6 +5,6 @@ class course extends db{
     public static function list(){
         $db=db::init();
         $temp=$db->select(self::$table,"id,name,summary,thumbnail,fee");
-        console::log($temp);
+        return $temp;
     }
 }
