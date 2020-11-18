@@ -1,5 +1,4 @@
 <?php
-// echo json_encode($_SERVER);die;
 $pdir=call_user_func(function () {
     $temp = explode(PATH_SEPARATOR, get_include_path());
     $temp[] = __DIR__;
