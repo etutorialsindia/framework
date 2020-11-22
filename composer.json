@@ -2,6 +2,7 @@
     "name": "etutorials/web",
     "description": "e-Tutorials Website",
     "type": "project",
+    "version":"0.0.8",
     "authors": [
         {
             "name": "Om Prakash Tiwari",
